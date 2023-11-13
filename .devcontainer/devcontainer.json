@@ -1,0 +1,6 @@
+{
+    "name": "PyLucene Development",
+    "image": "coady/pylucene",
+    "appPort": [8000],
+    "forwardPorts": [8000]
+}
