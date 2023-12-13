@@ -13,10 +13,11 @@ def create_folder_for_raw_data(folder_path):
 root_url = 'https://openlibrary.org'
 create_folder_for_raw_data('raw_html_pages')
 
-# fantasy category processed up to page 2067
 count = 0
 book_ids = []
 duplicates = 0
+
+# skript sluziaci na crawlovanie zdrojovej stranky, obsahuje kontrolu duplikatov a stranky uklada v povodnom stave
 while True:
     print("Processing page #" + str(count + 1))
     search_page_url = 'https://openlibrary.org/search?subject=Fantasy&sort=rating&page=' + str(count + 1)
